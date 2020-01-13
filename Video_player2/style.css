@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  background-color: #ccc;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.player {
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+  overflow: hidden;
+
+}
+
+
+
+
+.video {
+  width: 100%;
+}
+
+.progress {
+  background: #000;
+  height: 10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.progress_fill {
+  height: 10px;
+  background-color: yellowgreen;
+}
+
+.controls{
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: translateY(100%) translateY(-6px);
+  transition: all 0.15s;
+  
+}
+
+.player:hover  .controls {
+  transform: translateY(0);
+}
+
+
+.btn{
+  /* width: 30px;
+  height: 30px; */
+  /* display: inline-block; */
+  float: left;
+
+  /* font-size: 28px; */
+  color: rgb(0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+  padding: 6px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 13%; 
+  border-width: 1px;
+  border: yellowgreen solid;
+}
+
+.btn:hover{
+background-color: yellowgreen;
+color: #ccc;
+
+}
